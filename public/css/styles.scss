@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   background-color: #f8f6f3;
   min-height: 100vh;
+  color: #4a3d31;
 }
 
 .header {
@@ -30,6 +31,7 @@ body {
       height: 3rem;
       font-size: 3rem;
       margin-right: 1rem;
+      cursor: pointer;
     }
   }
 
@@ -41,10 +43,43 @@ body {
   }
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  background-image: linear-gradient(to top right,#4a3d31, #111);
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: all .4s;
+  max-height: 0;
+  z-index: -1;
+  
+  &.active {
+    max-height: 30rem;
+  }
+
+  &__choice {
+    padding: 2rem;
+    border-left: 4px solid transparent;
+    transition: all .6s;
+    cursor: pointer;
+
+    &:hover {
+      border-left: 4px solid #c44303;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
 .main {
   position: relative;
   background-color: #f8f6f3;
   padding: 0 1rem 0 1rem;
+
+
   &__image {
     width: 100%;
     overflow: hidden;
@@ -73,6 +108,24 @@ body {
     padding: 1rem 1rem 3rem;
     text-align: center;
     box-shadow: 0 0 1rem #000;
+
+    p {
+      padding-left: 1rem;
+      margin: 1rem 1rem;
+    }
+
+    .fa-quote-left {
+      position: absolute;
+      top: 0;
+      left: 4px;
+      font-size: 6rem;
+      opacity: .05;
+    }
+  }
+
+  &__signature {
+    text-align: right;
+    font-style: italic;
   }
   &__links {
     position: absolute;
@@ -94,21 +147,41 @@ body {
     border: none;
     font: inherit;
     font-weight: bold;
-    width: 10rem;
+    cursor: pointer;
+    display: inline-block;
   }
 
-  &__body {
-    font-size: 2rem;
-    color: #4a3d31;
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
 
-    p {
-      padding-bottom: 2rem;
-      &:not(:last-child) {
-        border-bottom: 1px solid #4a3d3155;
-      }
+}
+
+.body {
+  font-size: 2rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__button {
+    display: block;
+    width: 6rem;
+    background-color: #c44303;
+    background-image: linear-gradient(to top right,#c44303, #a03b08);
+    box-shadow: 0 0 1rem #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    border: none;
+    font: inherit;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 2rem 2rem 0 auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  p {
+    padding-bottom: 2rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid #4a3d3155;
     }
   }
 }
@@ -129,6 +202,73 @@ body {
     a {
       text-decoration: underline;
       color: #fff;
+    }
+  }
+  &__contact {
+    text-align: center;
+  }
+}
+
+
+/******************************** GALLERY */
+.gallery {
+  margin: 2rem 1rem;
+  z-index: 1;
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: repeat(6, 200px);
+    grid-auto-rows: 200px;
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+    // grid-area: auto;
+    
+    .img2x1 {
+      grid-column: span 2;
+    }
+    .img1x2 {
+      grid-row: span 2;
+    }
+    .img2x2 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .img1x3 {
+      grid-row: span 3;
+    }
+    .img1x4 {
+      grid-row: span 4;
+    }
+    .img1x5 {
+      grid-row: span 5;
+    }
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      
+
+      :hover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        &::before {
+          content: "hello";
+          background-color: red;
+        }
+      }
     }
   }
 }

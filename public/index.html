@@ -21,10 +21,14 @@
     <header class="header">
       <h1 class="header__title">Animals Have Rights</h1>
       <nav>
-        <i class="fas fa-bars"></i>
-        <i class="far fa-envelope"></i>
+        <i id="menu-icon" class="fas fa-bars"></i>
       </nav>
     </header>
+    <div class="menu">
+      <a class="menu__choice">Gallery</a>
+      <a class="menu__choice">Blog</a>
+      <a class="menu__choice">About</a>
+    </div>
 
     <main class="main">
       <div class="main__image">
@@ -34,24 +38,35 @@
         />
       </div>
       <div class="main__description">
+        <i class="fas fa-quote-left"></i>
         <p>
           The articles and art on this site are created from our love of
           animals.
         </p>
+        <p class="main__signature">-Larry Weiss and Janet Hastings</p>
         <div class="main__links">
-          <button class="main__button">Articles&rarr;</button>
-          <button class="main__button">Art&rarr;</button>
+          <a class="main__button">About Us&rarr;</a>
         </div>
       </div>
-      <div class="main__body">
+      <div class="body">
         <p>
-          <strong>Whereas many discussions of animal rights and welfare issues are
-            frequently dry</strong>
+          <strong
+            >Whereas many discussions of animal rights and welfare issues are
+            frequently dry</strong
+          >
           and lose the heart of the matter, we strive to create clear and
-          understandable explanations of complex issues.</p><p><strong>The art and essays on
-          this site proceed from a vision that animals are our sisters and
-          brothers.</strong> We hope to be a resource for those who care about extending
-          compassion to all beings.
+          understandable explanations of complex issues.
+
+          <a class="body__button">Articles&rarr;</a>
+        </p>
+        <p>
+          <strong
+            >The art and essays on this site proceed from a vision that animals
+            are our sisters and brothers.</strong
+          >
+          We hope to be a resource for those who care about extending compassion
+          to all beings.
+          <a href="gallery.html" class="body__button">Art&rarr;</a>
         </p>
       </div>
     </main>
@@ -64,10 +79,23 @@
         sources is the property of those parties.
       </p>
 
-      <p>
+      <p class="footer__contact">
         Visitors may write to Larry Weiss & Janet Hastings
         <a href="mailto:honor.animals1@gmail.com">here</a>
       </p>
     </footer>
+
+    <script>
+      let isShown = true;
+      document.querySelector("#menu-icon").addEventListener("mouseup", e => {
+        const menu = document.querySelector('.menu');
+        if(menu.classList.contains('active')) {
+          menu.classList.remove('active')
+        } else {
+          menu.classList.add('active')
+        }
+
+      });
+    </script>
   </body>
 </html>
