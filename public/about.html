@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Buda:300|News+Cycle&display=swap"
+      rel="stylesheet"
+    />
+    <title>Animals Have Rights</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__title" href="/">Animals Have Rights</a>
+      <nav class="menu--mobile">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </nav>
+      <nav class="menu--desktop">
+        <a class="menu__choice" href="/gallery">Gallery</a>
+        <a class="menu__choice" href="/blog">Blog</a>
+        <a class="menu__choice active" href="/about">About</a>
+      </nav>
+    </header>
+    <div class="menu">
+      <a class="menu__choice" href="/gallery">Gallery</a>
+      <a class="menu__choice" href="/blog">Blog</a>
+      <a class="menu__choice" href="/about">About</a>
+    </div>
+
+    <section class="about">
+      <div class="about__video">
+        <h2 class="about__title">About Larry and Janet</h2>
+        <iframe
+          width="1020"
+          height="630"
+          src="https://www.youtube.com/embed/Tv7FGbjuveE?rel=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <figure class="bios">
+        <div class="bios__portrait">
+          <div class="bios__placard">
+              <img src="./images/larry-janet-weiss.webp" alt="Larry and Janet" />
+          </div>
+        </div>
+        <div class="bios__container">
+          <p class="bios__bio">
+            <strong>Larry Weiss</strong> is a retired attorney who earned a B.A. from the
+            University of Chicago and a law degree at the University of
+            California at Berkeley. He practiced law in California for 36 years,
+            first as a criminal defense attorney and then in the field of animal
+            law. Larry specialized in the defense of animal activists.<br /><br />
+            Larry believes that the exploitation of animals is a branch of the
+            pervasive tree of dominance that exists within our society. "If we
+            create a culture of true respect and compassion toward animals then
+            this will change everything."
+          </p>
+          <p class="bios__bio">
+            <strong>Janet Hastings</strong> moved to the U.S. from the U.K. in 1967. As an
+            environmentalist, her priorities in life include the pursuit of
+            arts, crafts and furniture restoration using only recycled
+            materials. This has led to many adventures and the fun of dumpster
+            diving, helping to keep some of the earth's resources out of the
+            landfills.<br /><br />Janet's greatest passion is her pursuit of reducing
+            suffering of animals. This passion motivated her to create a native
+            wildlife garden, follow a vegan diet, and encourage awareness of the
+            pitfalls of human overpopulation, which typically leads to cruel
+            exploitation of both animals and the environment.
+          </p>
+        </div>
+      </figure>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__disclaimer">
+        The views and legal opinions expressed on this site are solely those of
+        Larry Weiss, while the art works were created by Janet Hastings. All are
+        welcome to copy and utilize any of Larry's text or images of Janet's
+        work on this website free of charge. Any content attributed to named
+        sources is the property of those parties.
+      </p>
+
+      <p class="footer__contact">
+        Visitors may write to Larry Weiss & Janet Hastings
+        <a href="mailto:honor.animals1@gmail.com">here</a>
+      </p>
+    </footer>
+
+    <script>
+      let isShown = true;
+      document.querySelector("#menu-icon").addEventListener("mouseup", e => {
+        const menu = document.querySelector(".menu");
+        if (menu.classList.contains("active")) {
+          menu.classList.remove("active");
+        } else {
+          menu.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
