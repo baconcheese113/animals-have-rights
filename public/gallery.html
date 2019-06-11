@@ -19,64 +19,155 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Animals Have Rights</h1>
-      <nav>
+      <a class="header__title" href="/">Animals Have Rights</a>
+      <nav class="menu--mobile">
         <i id="menu-icon" class="fas fa-bars"></i>
+      </nav>
+      <nav class="menu--desktop">
+        <a class="menu__choice active" href="/gallery">Gallery</a>
+        <a class="menu__choice" href="/blog">Blog</a>
+        <a class="menu__choice" href="/about">About</a>
       </nav>
     </header>
     <div class="menu">
-      <a class="menu__choice">Gallery</a>
-      <a class="menu__choice">Blog</a>
-      <a class="menu__choice">About</a>
+      <a class="menu__choice" href="/gallery">Gallery</a>
+      <a class="menu__choice" href="/blog">Blog</a>
+      <a class="menu__choice" href="/about">About</a>
     </div>
+
+    <figure id="showcase" class="showcase">
+      <div id="showcase-bg" class="showcase__bg"></div>
+      <img id="showcase-img" src="./images/elephant.webp" alt="" />
+    </figure>
 
     <section class="gallery">
       <h1 class="gallery__title">
         Artwork by Janet
       </h1>
       <div class="gallery__grid">
-        <div class="img2x2"><img src="./images/JanetArt/abstract-lined.JPG" alt="abstract lined art"></div>
-        <div class="img1x1"><img src="./images/JanetArt/abstract3.JPG" alt="abstract art"></div>
-        <div class="img1x1"><img src="./images/JanetArt/big-foot-bird.JPG" alt="big foot bird art"></div>
-        <div class="img1x2"><img src="./images/JanetArt/blue-skirt.JPG" alt="blue skirt art"></div>
-        <div class="img1x1"><img src="./images/JanetArt/bride-under-flowers.JPG" alt="bride under flowers"></div>
-        <div class="img1x1"><img src="./images/JanetArt/cat-fish.JPG" alt="cat-fish"></div>
-        <div class="img1x3"><img src="./images/JanetArt/stick-dove.JPG" alt="stick dove"></div>
-        <div class="img1x2"><img src="./images/JanetArt/cubist.jpg" alt="cubist"></div>
-        <div class="img1x1"><img src="./images/JanetArt/dignity.jpg" alt="dignity"></div>
-        <div class="img1x2"><img src="./images/JanetArt/diving-dove.JPG" alt="diving dove"></div>
-        <div class="img1x1"><img src="./images/JanetArt/earth-mom.JPG" alt="earth mom"></div>
-        <div class="img1x5"><img src="./images/JanetArt/woman-whitebird.JPG" alt="woman whitebird"></div>
-        <div class="img1x1"><img src="./images/JanetArt/earth-mother.jpg" alt="earth mother"></div>
-        <div class="img2x2"><img src="./images/JanetArt/eden.jpg" alt="eden"></div>
-        <div class="img1x1"><img src="./images/JanetArt/feets.JPG" alt="feets"></div>
-        <div class="img1x2"><img src="./images/JanetArt/yinyang2.jpg" alt="ying yang"></div>
-        <div class="img1x1"><img src="./images/JanetArt/glorious-day.jpg" alt="glorious day"></div>
-        <div class="img1x1"><img src="./images/JanetArt/greenpig.JPG" alt="green pig"></div>
-        <div class="img1x2"><img src="./images/JanetArt/halo-table.JPG" alt="halo table"></div>
-        <div class="img2x2"><img src="./images/JanetArt/lovers.jpg" alt="lovers"></div>
-        <div class="img2x2"><img src="./images/JanetArt/meditation.jpg" alt="meditation"></div>
-        <div class="img1x1"><img src="./images/JanetArt/naked-on-blue.jpg" alt="naked on blue"></div>
-        <div class="img1x1"><img src="./images/JanetArt/natura.jpg" alt="natura"></div>
-        <div class="img1x1"><img src="./images/JanetArt/pig.jpg" alt="pig"></div>
-        <div class="img1x1"><img src="./images/JanetArt/polynesia.jpg" alt="polynesia"></div>
-        <div class="img1x1"><img src="./images/JanetArt/reptiles.JPG" alt="reptiles"></div>
-        <div class="img1x1"><img src="./images/JanetArt/scorpio-woman.jpg" alt="scorpio woman"></div>
-        <div class="img1x2"><img src="./images/JanetArt/spider-woman.jpg" alt="spider woman"></div>
-        <div class="img1x1"><img src="./images/JanetArt/spiral-cat.jpg" alt="spiral cat"></div>
-        <div class="img1x1"><img src="./images/JanetArt/spiral-cat2.jpg" alt="spiral cat 2"></div>
-        <div class="img1x1"><img src="./images/JanetArt/star.jpg" alt="star"></div>
-        <div class="img1x1"><img src="./images/JanetArt/tilthead.jpg" alt="tilt head"></div>
-        <div class="img1x1"><img src="./images/JanetArt/treeman.JPG" alt="tree man"></div>
-        <div class="img1x1"><img src="./images/JanetArt/trip-earrings.JPG" alt="trip earrings"></div>
-        <div class="img1x1"><img src="./images/JanetArt/two-snakes.JPG" alt="two snakes"></div>
-        <div class="img1x1"><img src="./images/JanetArt/yellow-blue.JPG" alt="yellow blue"></div>
-
-
-
+        <div class="img2x2">
+          <img
+            src="./images/JanetArt/abstract-lined.webp"
+            alt="abstract lined art"
+          />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/abstract3.webp" alt="abstract art" />
+        </div>
+        <div class="img1x1">
+          <img
+            src="./images/JanetArt/big-foot-bird.webp"
+            alt="big foot bird art"
+          />
+        </div>
+        <div class="img1x2">
+          <img src="./images/JanetArt/blue-skirt.webp" alt="blue skirt art" />
+        </div>
+        <div class="img1x1">
+          <img
+            src="./images/JanetArt/bride-under-flowers.webp"
+            alt="bride under flowers"
+          />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/cat-fish.webp" alt="cat-fish" />
+        </div>
+        <div class="img1x3">
+          <img src="./images/JanetArt/stick-dove.webp" alt="stick dove" />
+        </div>
+        <div class="img1x2">
+          <img src="./images/JanetArt/cubist.webp" alt="cubist" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/dignity.webp" alt="dignity" />
+        </div>
+        <div class="img1x2">
+          <img src="./images/JanetArt/diving-dove.webp" alt="diving dove" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/earth-mom.webp" alt="earth mom" />
+        </div>
+        <div class="img1x5">
+          <img
+            src="./images/JanetArt/woman-whitebird.webp"
+            alt="woman whitebird"
+          />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/earth-mother.webp" alt="earth mother" />
+        </div>
+        <div class="img2x2">
+          <img src="./images/JanetArt/eden.webp" alt="eden" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/feets.webp" alt="feets" />
+        </div>
+        <div class="img1x2">
+          <img src="./images/JanetArt/yinyang2.webp" alt="ying yang" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/glorious-day.webp" alt="glorious day" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/greenpig.webp" alt="green pig" />
+        </div>
+        <div class="img1x2">
+          <img src="./images/JanetArt/halo-table.webp" alt="halo table" />
+        </div>
+        <div class="img2x2">
+          <img src="./images/JanetArt/lovers.webp" alt="lovers" />
+        </div>
+        <div class="img2x2">
+          <img src="./images/JanetArt/meditation.webp" alt="meditation" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/naked-on-blue.webp" alt="naked on blue" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/natura.webp" alt="natura" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/pig.webp" alt="pig" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/polynesia.webp" alt="polynesia" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/reptiles.webp" alt="reptiles" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/scorpio-woman.webp" alt="scorpio woman" />
+        </div>
+        <div class="img1x2">
+          <img src="./images/JanetArt/spider-woman.webp" alt="spider woman" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/spiral-cat.webp" alt="spiral cat" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/spiral-cat2.webp" alt="spiral cat 2" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/star.webp" alt="star" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/tilthead.webp" alt="tilt head" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/treeman.webp" alt="tree man" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/trip-earrings.webp" alt="trip earrings" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/two-snakes.webp" alt="two snakes" />
+        </div>
+        <div class="img1x1">
+          <img src="./images/JanetArt/yellow-blue.webp" alt="yellow blue" />
+        </div>
       </div>
     </section>
-    
+
     <footer class="footer">
       <p class="footer__disclaimer">
         The views and legal opinions expressed on this site are solely those of
@@ -93,16 +184,32 @@
     </footer>
 
     <script>
+      // Menu icon collapse/expand
       let isShown = true;
       document.querySelector("#menu-icon").addEventListener("mouseup", e => {
-        const menu = document.querySelector('.menu');
-        if(menu.classList.contains('active')) {
-          menu.classList.remove('active')
+        const menu = document.querySelector(".menu");
+        if (menu.classList.contains("active")) {
+          menu.classList.remove("active");
         } else {
-          menu.classList.add('active')
+          menu.classList.add("active");
         }
-
       });
+
+      // Gallery showcase
+      document.querySelectorAll(".gallery__grid>div").forEach(div => {
+        div.addEventListener("mouseup", e => {
+          console.log(e);
+          console.log(div.children[0].src);
+          document.getElementById("showcase").classList.add("active");
+          document.getElementById("showcase-img").src = div.children[0].src;
+        });
+      });
+      document
+        .getElementById("showcase-img")
+        .addEventListener("mouseup", () => {
+          document.getElementById("showcase").classList.remove("active");
+          console.log("remove");
+        });
     </script>
   </body>
 </html>
