@@ -47,4 +47,4 @@ That's it! Once you save and refresh the browser it should be at the bottom of t
 
 ## Adding Blog Posts
 
-TODO
+[Here's](http://recordit.co/ptjAn8NsL3) a video where I demonstrate the process of making a new blog post in 4 minutes.
