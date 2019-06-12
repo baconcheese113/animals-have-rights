@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Buda:300|News+Cycle&display=swap"
+      rel="stylesheet"
+    />
+    <title>Animals Have Rights</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__title" href="/">Animals Have Rights</a>
+      <nav class="menu--mobile">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </nav>
+      <nav class="menu--desktop">
+        <a class="menu__choice" href="/gallery">Gallery</a>
+        <a class="menu__choice" href="/blog">Blog</a>
+        <a class="menu__choice" href="/about">About</a>
+      </nav>
+    </header>
+    <div class="menu">
+      <a class="menu__choice" href="/gallery">Gallery</a>
+      <a class="menu__choice" href="/blog">Blog</a>
+      <a class="menu__choice" href="/about">About</a>
+    </div>
+
+    <article class="post">
+      <h2 class="post__title">Proposed Denver Antibiotics Bill</h2>
+
+      <blockquote>
+          PROPOSED LEGISLATION BANNING PURCHASE OF CHICKEN PRODUCTS PRODUCED WITH NONTHERAPEUTIC USE OF MEDICALLY IMPORTANT ANTIMICROBIAL DRUGS<br /><br />
+
+          SECTION 1.  Section ______is added to the Denver Revised Municipal Code to read:<br /><br />
+
+          (a) Commencing January 1, 2016, all Denver City and County governmental agency personnel charged with purchasing poultry products for human consumption by the City and County of Denver pursuant to Title II, Revised Municipal Code, Chapter 20, Article IV Division 2, shall not purchase chicken products produced with the nontherapeutic use of medically important antimicrobial drugs.<br /><br />
+
+          (b) Commencing January 1, 2016, all Denver City and County governmental agency personnel charged with purchasing chicken products for human consumption by the City and County of Denver pursuant to Title II, Revised Municipal Code, Chapter 20, Article IV Division 2, shall include in any contract to purchase chicken products a clause providing that the supplier certifies, in accordance with subsection (f) below, that such products were produced without the nontherapeutic use of medically important antimicrobial drugs.<br /><br />
+
+          (c)  For purposes of this section, “chicken products” means any chicken carcasses or parts thereof that are purchased in bulk. Excepted are soups, gravies, sauces, salads, pizzas and any food items that contain chicken as a minority ingredient.<br /><br />
+
+          (d)  For purposes of this section, "medically important antimicrobial” means any drug, or drug in  the same antimicrobial class as a drug, that is used by humans or intended for use by humans to treat or prevent disease or infection caused by micro-organisms and is identified as medically important (important, highly important, or critically important) by the U.S. Food and Drug Administration in Appendix A of FDA’s Guidance for Industry #152 or subsequent listing by the FDA including, but not limited to, any drug or derivative of a drug that is composed wholly or partly of any of the following classes: penicillin, tetracycline, macrolide, lincosamide, streptogramin, aminoglycoside, sulfonamide, or cephalosporin.<br /><br />
+
+          (e)  For purposes of this section, "nontherapeutic” use means any use of a drug listed in subsection (d) herein as a feed or water additive, or in poultry hatcheries through any means, except to treat sick birds under the supervision of a veterinarian, for the purposes of growth promotion, feed efficiency, weight gain, routine disease prevention, or other routine purpose in the absence of any clinical sign of disease in the animal.<br /><br />
+
+          (f)  For purposes of this section, "certify" means a written statement signed by an authorized representative of the supplier, stating that the chicken product has not been produced by methods involving the nontherapeutic use of drugs identified as medically important (important, highly important, or critically important) by the U.S. Food and Drug Administration in Appendix A of FDA’s Guidance for Industry #152 or subsequent listing by the FDA.<br /><br />
+
+          (g) The provisions of this section shall not apply to any individual, organization, or other entity applying for licensure as a retail food establishment, operator of a mobile retail food establishment or pushcart, operator of a temporary retail food establishment, or as a food peddler or ice cream vendor under the provisions of Title II Revised Municipal Code Chapter 23 Article III Division 2.<br /><br />
+      </blockquote>
+      
+      <p class="post__body">
+          <strong>- Larry</strong><br /><br />
+      </p>
+    </article>
+
+    <footer class="footer">
+      <p class="footer__disclaimer">
+        The views and legal opinions expressed on this site are solely those of
+        Larry Weiss, while the art works were created by Janet Hastings. All are
+        welcome to copy and utilize any of Larry's text or images of Janet's
+        work on this website free of charge. Any content attributed to named
+        sources is the property of those parties.
+      </p>
+
+      <p class="footer__contact">
+        Visitors may write to Larry Weiss & Janet Hastings
+        <a href="mailto:honor.animals1@gmail.com">here</a>
+      </p>
+    </footer>
+
+    <script>
+      let isShown = true;
+      document.querySelector("#menu-icon").addEventListener("mouseup", e => {
+        const menu = document.querySelector(".menu");
+        if (menu.classList.contains("active")) {
+          menu.classList.remove("active");
+        } else {
+          menu.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

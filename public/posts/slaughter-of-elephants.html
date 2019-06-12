@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Buda:300|News+Cycle&display=swap"
+      rel="stylesheet"
+    />
+    <title>Animals Have Rights</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__title" href="/">Animals Have Rights</a>
+      <nav class="menu--mobile">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </nav>
+      <nav class="menu--desktop">
+        <a class="menu__choice" href="/gallery">Gallery</a>
+        <a class="menu__choice" href="/blog">Blog</a>
+        <a class="menu__choice" href="/about">About</a>
+      </nav>
+    </header>
+    <div class="menu">
+      <a class="menu__choice" href="/gallery">Gallery</a>
+      <a class="menu__choice" href="/blog">Blog</a>
+      <a class="menu__choice" href="/about">About</a>
+    </div>
+
+    <article class="post">
+      <h2 class="post__title">The Sad Slaughter of Elephants For Their Tusks</h2>
+
+        <p class="post__body">
+          A massacre of the world's elephants is going on right now. One hundred thousand African elephants were been killed by poachers between 2010-2012 and the total population of elephants in Africa has declined 64% in a decade.<br /><br />
+
+          This slaughter is occurring because elephants are killed for their tusks. Ivory has long been a status symbol in Asia and increased prosperity in China and southeast Asia has allowed a newly created middle class to purchase ivory on the black market. Furthermore, many traditional societies believe that ivory has medicinal powers (which it does not) and it is often ground up to produce expensive medicines.<br /><br />
+          
+          The continuing demand for ivory produces an army of poachers who will fill this demand. These poachers are often allied with terrorist groups who use the proceeds from the illegal ivory trade to finance their activities. Because of this poacher/terrorist connection, the poachers are often armed with sophisticated weaponry including machine guns.<br /><br />
+
+          In an effort to protect elephants, The Convention on International Trade in Endangered Species ("CITES") in 1989 banned the sale of all ivory except "old estate ivory". However, it left enforcement to the individual countries and this has been the loophole. Some countries did not sign the treaty and among those who did many do not enforce it at all.<br /><br />
+
+          Concerted global action is required if we are to save the elephants. As the secretary-general of CITES accurately states, "In terms of concrete actions, we need to move to focus on the front-line and tackle all links in the illegal ivory trade chain -- improve local livelihoods (for those living with elephants), strengthen enforcement and governance and reduce demand for illegal ivory."<br /><br />
+
+          <img class="post__image" src="../images/blog/elephant.webp" alt="">
+          <span class="post__subtitle">
+              WHAT CAN WE DO TO PROTECT ELEPHANTS FROM
+              THIS TERRIBLE SLAUGHTER?
+          </span><br /><br />
+
+          1. Support and expand international, federal and state laws that regulate and prohibit the ivory trade.<br /><br />
+
+          2. Tell your legislators of your desire to protect elephants as this will affect their policies on the importation of ivory. The same legislators who take steps to protect wildlife in the U.S. are generally interested in protecting wildlife elsewhere. Write or email your state and federal representatives and ask what their positions are on wildlife protection in general and elephants in particular. When I contact my representatives, I always specifically state that I would like a call or letter back.<br /><br />
+
+          3. Insist that the rules promulgated by CITES in 1989 be enforced. China is the worst offender in terms of enforcement so please write the Chinese embassy.<br /><br />
+
+            3505 International Place, N.W.<br />
+            Washington, D.C. 20008<br/>
+            Email: <a href="mailto:chinaembpress_us@mfa.gov.cn">chinaembpress_us@mfa.gov.cn</a><br /><br />
+          
+          4. Do not purchase ivory yourselves. Even "old estate ivory" (defined as ivory that was more than 100 years old at the time of import) reinforces the idea that ivory is desirable. Frequently the ivory you buy today is poached, despite the often forged documentation that accompanies it.<br /><br />
+
+          5. Do not travel to countries in Africa that do not protect elephants. Many African countries are not putting the necessary resources into protecting elephants and other wildlife. Write to their embassies and express your feelings on this issue and the reasons why you are traveling (or not traveling) to their country. Some nations, such as Kenya, are making an honest effort to protect elephants and recently have been successful by employing drones to spot poachers. <strong>- Larry</strong><br /><br />
+
+          For further information, please consult the following websites:<br />
+
+          <a href="http://www.kristalparks.com/pachyderm/">Pachyderm Power</a>
+          
+          <a href="https://www.thedodo.com/drone-army-to-protect-and-save-524449274.html">The Dodo</a>
+
+          
+          <a href="http://news.nationalgeographic.com/news/2014/08/140818-elephants-africa-poaching-cites-census/">National Geographic</a>
+
+          <a href="http://www.cbsnews.com/news/poachers-killed-22000-african-elephants-in-2012-study-shows/">CBS News</a>
+
+          <a href="http://www.bloodyivory.org/">Bloody Ivory</a>
+        </p>
+    </article>
+
+    <footer class="footer">
+      <p class="footer__disclaimer">
+        The views and legal opinions expressed on this site are solely those of
+        Larry Weiss, while the art works were created by Janet Hastings. All are
+        welcome to copy and utilize any of Larry's text or images of Janet's
+        work on this website free of charge. Any content attributed to named
+        sources is the property of those parties.
+      </p>
+
+      <p class="footer__contact">
+        Visitors may write to Larry Weiss & Janet Hastings
+        <a href="mailto:honor.animals1@gmail.com">here</a>
+      </p>
+    </footer>
+
+    <script>
+      let isShown = true;
+      document.querySelector("#menu-icon").addEventListener("mouseup", e => {
+        const menu = document.querySelector(".menu");
+        if (menu.classList.contains("active")) {
+          menu.classList.remove("active");
+        } else {
+          menu.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

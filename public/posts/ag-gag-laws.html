@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Buda:300|News+Cycle&display=swap"
+      rel="stylesheet"
+    />
+    <title>Animals Have Rights</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__title" href="/">Animals Have Rights</a>
+      <nav class="menu--mobile">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </nav>
+      <nav class="menu--desktop">
+        <a class="menu__choice" href="/gallery">Gallery</a>
+        <a class="menu__choice" href="/blog">Blog</a>
+        <a class="menu__choice" href="/about">About</a>
+      </nav>
+    </header>
+    <div class="menu">
+      <a class="menu__choice" href="/gallery">Gallery</a>
+      <a class="menu__choice" href="/blog">Blog</a>
+      <a class="menu__choice" href="/about">About</a>
+    </div>
+
+    <article class="post">
+      <h2 class="post__title">What are "Ag-Gag" Laws</h2>
+
+      <p class="post__body">
+        Ag-Gag is the term used to describe a series of anti-whistleblower laws
+        in the U.S. Though they vary in details, the essence of these laws is
+        that they criminalize the taking of undercover videos of abusive
+        practices in the animal agriculture industry. Some of these laws
+        criminalize the taking of videos documenting inhumane factory farming
+        practices without the owner's consent, while others criminalize the
+        application for employment in factory farms without disclosing the
+        applicant's links to the press or to organizations concerned with animal
+        welfare. A third variant, which pretends to help the animals, requires
+        that any evidence of abuse be turned over to authorities in a very short
+        period of time, usually 24 or 48 hours. This kind of Ag-Gag bill is more
+        subtle than the others but is just as harmful in that it would alert the
+        abusers early in the process and preclude the gathering of evidence
+        necessary to a successful cruelty prosecution.<br /><br />
+
+        The result of these laws is to make exposure of abusive practices to the
+        public extremely difficult in the states which have passed them. In the
+        real world, how often will factory farm owners and managers consent to
+        have their practices filmed and how many will employ people with links
+        to PETA or HSUS? The Food Integrity Campaign of the Government
+        Accountability Project, a non profit, describes the situation as
+        follows:<br /><br />
+      </p>
+
+      <blockquote>
+        "When it comes to bringing horrific truths to the public eye, undercover
+        footage and images are often an effective outlet for whistleblowers who
+        otherwise risk retaliation when speaking up. Going through "proper
+        channels" to report abuse often results in supervisors intimidating
+        those employees who have made complaints to keep quiet. Statements by Ag
+        Gag bill sponsors imply that "real" whistleblowers have a safe and
+        effectual means for speaking up, when history shows that's often not the
+        case."
+      </blockquote>
+
+      <img
+        class="post__image"
+        src="../images/JanetArt/halo-table.webp"
+        alt="halo table"
+      /><br /><br />
+
+      <p class="post__body">
+          Ag-gag laws have already passed in several states and bills proposing them are pending in many others. These bills have usually passed in states with powerful livestock lobbies and have generally been rejected in states with a more humane orientation. <br /><br />
+
+          Which side do you want to be on in this raging battle?<strong>- Larry</strong
+            ><br /><br />
+      </p>
+    </article>
+
+    <footer class="footer">
+      <p class="footer__disclaimer">
+        The views and legal opinions expressed on this site are solely those of
+        Larry Weiss, while the art works were created by Janet Hastings. All are
+        welcome to copy and utilize any of Larry's text or images of Janet's
+        work on this website free of charge. Any content attributed to named
+        sources is the property of those parties.
+      </p>
+
+      <p class="footer__contact">
+        Visitors may write to Larry Weiss & Janet Hastings
+        <a href="mailto:honor.animals1@gmail.com">here</a>
+      </p>
+    </footer>
+
+    <script>
+      let isShown = true;
+      document.querySelector("#menu-icon").addEventListener("mouseup", e => {
+        const menu = document.querySelector(".menu");
+        if (menu.classList.contains("active")) {
+          menu.classList.remove("active");
+        } else {
+          menu.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

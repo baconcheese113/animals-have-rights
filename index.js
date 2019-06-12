@@ -17,5 +17,8 @@ app.get('/about', (req, res) => {
 app.get('/blog', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'blog.html'))
 })
+app.get('/blog/:post', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'posts', req.params.post))
+})
 
 app.listen(process.env.PORT || PORT) 
