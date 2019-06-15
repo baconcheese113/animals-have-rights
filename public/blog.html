@@ -65,7 +65,7 @@
 
         <!-- Add links to new blog posts above this line -->
       </section>
-      <section class="blog-list">
+      <section class="blog-list" id="blog-list">
         <article class="preview" id="animal-rights-movement">
           <h2 class="preview__title">What is the Animal Rights Movement?</h2>
           <p class="preview__snippet">
@@ -322,6 +322,11 @@
           });
         });
       });
+
+      // Hack because safari is wack
+      if(navigator.vendor.match(/apple/i)) {
+        document.getElementById('blog-list').style.maxHeight = '900rem'
+      }
     </script>
   </body>
 </html>
