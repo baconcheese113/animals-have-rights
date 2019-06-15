@@ -21,4 +21,5 @@ app.get('/blog/:post', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'posts', req.params.post))
 })
 
-app.listen(process.env.PORT || PORT) 
+app.listen(process.env.PORT || PORT, '0.0.0.0')
+console.log(`listening on 0.0.0.0:${process.env.PORT || PORT}`)

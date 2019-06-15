@@ -21,7 +21,8 @@ This should be a fairly simple project to modify. Most of the difficulty will ju
 1. Install [Visual Studio Code](https://code.visualstudio.com/). *This will be where you type*
 2. Install [Nodejs](https://nodejs.org/en/) *This will be how you view the site*
 3. Open VS Code and in the terminal at the bottom run `git clone https://github.com/baconcheese113/animals-have-rights.git`
-4. Then run `npm run dev` and visit [localhost:8080](http://localhost:8080) in the browser
+4. Run `npm install` from the folder that was just created (AnimalsHaveRights most likely)
+5. Then run `npm run dev` and visit [localhost:8080](http://localhost:8080) in the browser
 
 **Congrats** You're now all set up
 
@@ -32,12 +33,11 @@ If you need to change styles I recommend getting the [scss-to-css](https://marke
 
 ## Adding Gallery Images
 
-1. Convert the image to .webp format [here](https://ezgif.com/jpg-to-webp)
-2. Add the .webp in [JanetArt/](public/images/JanetArt/)
-3. In [gallery.html](public/gallery.html) above the comment near the bottom add
+1. Add the .jpg in [JanetArt/](public/images/JanetArt/)
+2. In [gallery.html](public/gallery.html) above the comment near the bottom add
 ```
 <div class="img1x1">
-  <img src="./images/JanetArt/yellow-blue.webp" alt="yellow blue" />
+  <img src="./images/JanetArt/yellow-blue.jpg" alt="yellow blue" />
 </div>
 ```
 Make sure to replace the file name and alt text. If the picture has tall dimensions you can change the class to `img1x2` or `img1x3`
