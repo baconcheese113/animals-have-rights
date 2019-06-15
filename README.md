@@ -48,3 +48,23 @@ That's it! Once you save and refresh the browser it should be at the bottom of t
 ## Adding Blog Posts
 
 [Here's](http://recordit.co/ptjAn8NsL3) a video where I demonstrate the process of making a new blog post in 4 minutes.
+
+1. In [blog.html](public/blog.html) duplicate a new article above my comment towards the bottom of the page. Replace the `id`, title, preview snippet, and filename. (`name-of-post` and `Title Of Post` will be reused in several places, please see posts for examples)
+```
+  <article class="preview" id="name-of-post">
+    <h2 class="preview__title">Title Of Post</h2>
+    <p class="preview__snippet" style="-webkit-box-orient: vertical;">
+      This will be the first 5 sentences of the post, just enough to get a preview.
+    </p>
+    <a class="preview__button" href="blog/name-of-post.html">Read More&rarr;</a>
+  </article>
+```
+2. Add a Content link at the top of the page, above my other comment.
+```
+  <a href="#name-of-post" class="blog-directory__link">Title of Post</a>
+```
+3. Create a new html file in [posts/](public/posts/) and give it the filename you used in step 1.
+4. Copy everything from one of the other html files in posts and paste it into the new file.
+5. In the new file change everything inside `<article class="post">` to write the blog. If you hit the footer you've gone too far. Any pieces of a different blog can be copied in and modified for the most part. The styling is usually determined by the `class`.
+
+Boom! New Post! 

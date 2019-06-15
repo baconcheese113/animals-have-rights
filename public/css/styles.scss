@@ -277,10 +277,6 @@ body {
 .gallery {
   margin: 2rem 1rem;
   z-index: 1;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 
 
   &__title {
@@ -291,14 +287,11 @@ body {
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 30rem));
-    // grid-template-rows: repeat(4, 200px);
-    // grid-auto-rows: 200px;
     grid-gap: 1rem;
     grid-auto-flow: dense;
     justify-content: center;
     max-width: 93rem;
     margin: 0 auto;
-    // grid-area: auto;
     
     .img2x1 {
       grid-column: span 2;
@@ -306,10 +299,6 @@ body {
     .img1x2 {
       grid-row: span 2;
     }
-    // .img2x2 {
-    //   grid-column: span 2;
-    //   grid-row: span 2;
-    // }
     .img1x3 {
       grid-row: span 3;
     }
@@ -452,13 +441,13 @@ body {
     }
 
     &__snippet {
-      display: -webkit-box;
-      font-size: 1.6rem;
-      text-align: center;
-      overflow: hidden;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-      margin-bottom: 3rem;
+      // display: -webkit-box;
+      // font-size: 1.6rem;
+      // text-align: center;
+      // overflow: hidden;
+      // -webkit-line-clamp: 4;
+      // -webkit-box-orient: vertical;
+      // margin-bottom: 3rem;
     }
     &__button {
       @include button-main;
@@ -466,7 +455,6 @@ body {
       bottom: 0;
       left: 50%;
       transform: translate(-50%, 50%);
-      // margin: 0 auto -2rem;
       &:hover {
         transform: translate(-50%, 55%);
       }
@@ -482,9 +470,6 @@ body {
   align-items: center;
   padding: 0 1rem 6rem;
 
-  a {
-    align-self: flex-start;
-  }
 
   blockquote {
     max-width: 800px;
@@ -536,6 +521,10 @@ body {
     font-size: 1.8rem;
     display: flex;
     flex-direction: column;
+    
+    a {
+      align-self: flex-start;
+    }
   }
   
   &__image {
@@ -547,9 +536,6 @@ body {
 
 /************************** ABOUT */
 .about {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // grid-template-rows: 1fr 1fr 1fr;
   background-image: linear-gradient(to top,#4a3d31, #111);
   
   &__title {
@@ -565,14 +551,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    // padding: 1rem;
     justify-content: center;
     align-items: center;
 
     iframe {
       margin-top: 3rem;
       max-width: 100%;
-      // width: 100%;
       max-height: 56.25vw; /* 100/56.25 = 560/315 = 1.778 */
       box-shadow: 0 0 2rem #000;
     }
@@ -600,7 +584,6 @@ body {
       display: flex;
       justify-content: center;
       margin: auto;
-      // padding: 2rem;
       border-radius: 2rem;
       overflow: hidden;
       box-shadow: 0 0 2rem #111;
@@ -608,7 +591,6 @@ body {
       img {
         margin: auto;
         object-fit: contain;
-        // padding: 2rem;
       }
     }
 
