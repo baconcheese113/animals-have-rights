@@ -11,7 +11,7 @@ This project uses:
 
 **Frontend -** HTML5, [SCSS](https://sass-lang.com/documentation/syntax) compiled to CSS, [FontAwesome](https://fontawesome.com/icons?d=gallery) for icons, and [Google Fonts](https://fonts.google.com/) for fonts
 
-**Backend -** [Nodejs](https://nodejs.org/en/), [Express](https://expressjs.com/) routing
+**Backend -** [Nodejs](https://nodejs.org/en/), [Express](https://expressjs.com/) routing. *It's just using PHP in prod, but don't mind that.*
 
 
 ## Usage
@@ -68,3 +68,17 @@ That's it! Once you save and refresh the browser it should be at the bottom of t
 5. In the new file change everything inside `<article class="post">` to write the blog. If you hit the footer you've gone too far. Any pieces of a different blog can be copied in and modified for the most part. The styling is usually determined by the `class`.
 
 Boom! New Post! 
+
+
+## Deployment
+
+...yea...um, there's no easy way to put this.
+__It's a mess.__
+
+But if you have it working locally then it'll be pretty simple to upload the changed files and not touch anything else.
+
+1. Log into the hosting provider and go to the cPanel Admin. *You could use an FTP like Filezilla instead, but it's really not necessary*
+2. Find the `public_html` directory, this is similar to your local root folder for the project.
+3. Upload the files you changed to the directory that parallels your local project.
+
+Changes should be reflected immediately.
