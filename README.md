@@ -78,7 +78,7 @@ __It's a mess.__
 But if you have it working locally then it'll be pretty simple to upload the changed files and not touch anything else.
 
 1. Log into the hosting provider and go to the cPanel Admin. *You could use an FTP like Filezilla instead, but it's really not necessary*
-2. Find the `public_html` directory, this is similar to your local root folder for the project.
+2. Find the `public_html` directory in the File Manager, this is similar to your local root folder for the project.
 3. Upload the files you changed to the directory that parallels your local project.
 
 Changes should be reflected immediately.
